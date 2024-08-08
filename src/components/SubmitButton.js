@@ -13,7 +13,7 @@ export const SubmitButton = (
             style={{
                 backgroundColor: '#5A9AA9',
                 height: 50,
-                marginBottom: 20,
+                marginVertical: 10,
                 justifyContent: 'center',
                 marginHorizontal: 15,
                 borderRadius: 24,

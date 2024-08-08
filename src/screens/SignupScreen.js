@@ -50,22 +50,22 @@ export const SignupScreen = ({ navigation }) => {
                     justifyContent: "center",
                 }}>
                 <CircleLogo source={require('../images/icon_image.png')} />
-                <Text style={{fontSize:34, textAlign:"center"}}>Sign Up</Text>
+                <Text style={{fontSize:34, textAlign:"center", marginBottom:20,}}>Sign Up</Text>
                 <UserInput
-                    name="NAME"
+                    name="Name"
                     value={name}
                     setValue={setName}
                     autoCapitalize={"words"}
                 />
                 <UserInput
-                    name="EMAIL"
+                    name="Email"
                     value={email}
                     setValue={setEmail}
                     autoComplete={'email'}
                     keyboardType={"email-address"}
                 />
                 <UserInput
-                    name="PASSWORD"
+                    name="Password"
                     value={password}
                     setValue={setPassword}
                     secureTextEntry={isHidden}
