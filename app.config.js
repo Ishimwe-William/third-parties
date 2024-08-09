@@ -1,4 +1,4 @@
-{
+export default {
   "expo": {
     "name": "signin-with-thirdparties",
     "slug": "signin-with-thirdparties",
@@ -11,17 +11,29 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bunsenwill.thirdparties",
+      "googleServicesFile": process.env.GOOGLE_SERVICE_INFO,
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bunsenwill.thirdparties",
+      "googleServicesFile": process.env.GOOGLE_SERVICE_JSON,
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e2185f5-d062-4896-8505-2c69ac9a418c"
+      }
     }
   }
 }
